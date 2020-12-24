@@ -5,6 +5,14 @@
     margin:15px;
     border-radius: 5px;;
 }
+.my-vp-container
+{
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .dp-vp
 {
     max-width: 500px;
