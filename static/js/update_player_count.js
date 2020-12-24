@@ -1,9 +1,20 @@
+sh = screen.height
 let update_player_count = function()
 {
   //  console.log("we are here")
   cp = document.getElementById('choose_player')
   cp.classList.remove('without-size')
   cp.classList.add('with-size')
+  vp_1 = document.querySelectorAll('.without-size')
+    vp_1.forEach((ele)=>
+    {
+        ele.style.height=`${(sh*0.72)}px`
+    })
+    vp_2 = document.querySelectorAll('.with-size')
+    vp_2.forEach((e)=>
+    {
+        e.style.height=`${(sh*0.45)}px`
+    })
    team_one = document.querySelectorAll('.team_one_data')
    team_two = document.querySelectorAll('.team_two_data')
    let team_one_cnt=0 
@@ -30,6 +41,16 @@ let update_player_count = function()
     cp = document.getElementById('choose_player')
     cp.classList.remove('with-size')
     cp.classList.add('without-size')
+     vp_1 = document.querySelectorAll('.without-size')
+    vp_1.forEach((ele)=>
+    {
+        ele.style.height=`${(sh*0.72)}px`
+    })
+    vp_2 = document.querySelectorAll('.with-size')
+    vp_2.forEach((e)=>
+    {
+        e.style.height=`${(sh*0.45)}px`
+    })
        pc.style.display="none"
    }
 }
