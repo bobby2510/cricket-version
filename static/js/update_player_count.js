@@ -13,7 +13,7 @@ let update_player_count = function()
     vp_2 = document.querySelectorAll('.with-size')
     vp_2.forEach((e)=>
     {
-        e.style.height=`${(sh*0.45)}px`
+        e.style.height=`${(sh*0.42)}px`
     })
    team_one = document.querySelectorAll('.team_one_data')
    team_two = document.querySelectorAll('.team_two_data')
@@ -49,7 +49,7 @@ let update_player_count = function()
     vp_2 = document.querySelectorAll('.with-size')
     vp_2.forEach((e)=>
     {
-        e.style.height=`${(sh*0.45)}px`
+        e.style.height=`${(sh*0.42)}px`
     })
        pc.style.display="none"
    }
