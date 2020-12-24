@@ -1,4 +1,17 @@
 window.onload =authenticate
+if(sh<750)
+{
+    vp_1 = document.querySelectorAll('.without-size')
+    vp_1.forEach((ele)=>
+    {
+        ele.style.height=`${(sh*0.72)}px`
+    })
+    vp_2 = document.querySelectorAll('.with-size')
+    vp_2.forEach((e)=>
+    {
+        e.style.height=`${(sh*0.45)}px`
+    })
+}
 refresh_id = document.querySelector("#refresh_id")
 refresh_id.addEventListener('click',()=>
 {
