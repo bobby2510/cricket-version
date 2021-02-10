@@ -1,4 +1,39 @@
-json_data = {
+
+
+class Player
+  {
+    constructor(n,r,c,i,p_i,p_t_i,player_id)
+    {
+      this.player_name = n
+      this.player_role = r
+      this.player_credits = c
+      this.player_image = i
+      this.player_index=p_i
+      this.player_team_index=p_t_i
+      this.player_id=player_id
+    }
+  }
+class Team
+  {
+    constructor(player_list,team_n)
+    {
+      this.players =player_list
+      this.team_name = team_n
+    }
+  }
+class Series
+{
+  constructor(series_code,series_name,teams_list,teams)
+  {
+    this.code= series_code
+    this.name = series_name
+    this.teams_list = teams_list
+    this.teams = teams
+  }
+}
+let store_teams = function(){
+ 
+    json_data = {
     "req_data" :[
     {
       "series_name":"WBBL League",
@@ -304,40 +339,6 @@ json_data = {
   ]
 }
 
-
-class Player
-  {
-    constructor(n,r,c,i,p_i,p_t_i,player_id)
-    {
-      this.player_name = n
-      this.player_role = r
-      this.player_credits = c
-      this.player_image = i
-      this.player_index=p_i
-      this.player_team_index=p_t_i
-      this.player_id=player_id
-    }
-  }
-class Team
-  {
-    constructor(player_list,team_n)
-    {
-      this.players =player_list
-      this.team_name = team_n
-    }
-  }
-class Series
-{
-  constructor(series_code,series_name,teams_list,teams)
-  {
-    this.code= series_code
-    this.name = series_name
-    this.teams_list = teams_list
-    this.teams = teams
-  }
-}
-let store_teams = function(){
- 
       let req_data=json_data.req_data
         Series_Final_List=[]
         for(let j=0;j<req_data.length;j++)
