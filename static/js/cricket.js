@@ -9,7 +9,7 @@ let authenticate = function()
         ap.style.display="none"
         fp = document.querySelector('#sport_panel')
         fp.style.display="block"
-        let temp = parseInt((new Date()).getDate())+1
+        let temp = parseInt((new Date()).getDate())
         let temp_sub = parseInt(localStorage.getItem('date'))
        // console.log(temp)
        // console.log(temp_sub)
